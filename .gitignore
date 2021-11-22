@@ -1,0 +1,9 @@
+.env
+# /resources/views/portal/index.blade.php
+/resources/views/portal/kontak_kami.blade.php
+/resources/views/portal/tentang_kami.blade.php
+/resources/views/portal/notfound.blade.php
+/public/image_webinar/
+
+/vendor
+/phpmailer

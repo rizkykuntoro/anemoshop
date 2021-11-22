@@ -1,0 +1,106 @@
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+
+    <title>ARTIFICIAL INTELEGENCE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="###URL###ass-portal//vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="###URL###ass-portal/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="###URL###ass-portal/assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="###URL###ass-portal/assets/css/owl.css">
+
+  </head>
+
+  <body class="mobile widescreen modal-open" style="overflow: visible; padding-right: 19px;">
+
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header" style="text-align: center;">
+            <span class="modal-title" style="width: 100%;">
+                Menunggu Pembayaran <br>
+                Webinar : <font>###JudulWebinar###</font>
+            </span>          
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <style type="text/css">
+              body { 
+                  /*width:450px; margin:0 auto !important;*/
+                  /*line-height:1; */
+              }
+              section {
+                box-shadow: 0 0px 24px 0 rgb(0 0 0 / 6%), 0 1px 0px 0 rgb(0 0 0 / 2%);
+                border-radius: 5px;
+              }
+              .account-logo-box {
+                background-color: #505458;
+                padding: 10px;
+                border-radius: 5px 5px 0 0;
+              }
+              .account-pages .account-content {
+                background-color: #ffffff;
+              }
+              .form-control {
+                resize: none;
+                border: 0;
+                background-color: transparent;
+                border-bottom: 1px solid rgba(152, 152, 152, 0.8);
+                border-radius: 0 !important;
+                padding: 7px 12px 7px 0;
+                height: 40px;
+                max-width: 100%;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                -webkit-transition: all 300ms linear;
+                -moz-transition: all 300ms linear;
+                -o-transition: all 300ms linear;
+                transition: all 300ms linear;
+                font-size: 12px;
+              }
+            </style>
+                <section id="payment_form" style="">
+                  <div class="col-md-12" style="text-align: center;">
+                    <img src="###URL###ass-portal/assets/images/payment-waiting.png" height="200px">
+                  </div>
+                  <div class="col-md-12">
+                    <span style="font-size: 12px;">Lakukan Pembayaran Sebelum : <br> <font style="font-size: 15px" id="tgl_kadaluarsa">###TANGGAL_KADALUARSA###</font><font id="countdown" style="font-size: 14px;float: right;color: #f33030"></font></span>
+                  </div>
+                  <input type="hidden" id="real_expired_date" value="###REALEXPIREDDATE###">
+                  <hr>
+                  <div class="col-md-12">
+                    Metode Pembayaran 
+                  </div>
+                  <div class="col-md-12" style="padding-top: 10px;">
+                    <span style="display: none;" id="logo_bcaVA"><img src="###URL###ass-portal/logo-bank/bca.png" height="25px"> <font style="padding-left: 25px;font-size: 12px;font-weight: 700;">BCA</font></span>
+                    <span style="" id="logo_bniVA"><img src="###URL###ass-portal/logo-bank/bni.png" height="25px"> <font style="padding-left: 25px;font-size: 12px;font-weight: 700;">BNI</font></span>
+                    <span style="display: none;" id="logo_mandiriBILL"><img src="###URL###ass-portal/logo-bank/mandiri.png" height="25px"> <font style="padding-left: 25px;font-size: 12px;font-weight: 700;">MANDIRI</font></span>
+                    <span style="display: none;" id="logo_permataVA"><img src="###URL###ass-portal/logo-bank/permata.png" height="25px"> <font style="padding-left: 25px;font-size: 12px;font-weight: 700;">PERMATA</font></span>
+                    <span style="display: none;" id="logo_briVA"><img src="###URL###ass-portal/logo-bank/bank-bri.png" height="25px"> <font style="padding-left: 25px;font-size: 12px;font-weight: 700;">BRI</font></span>
+                  </div>
+                  <div class="col-md-12" style="padding-bottom: 10px">
+                    <span style="font-size: 12px;">Kode Pembayaran <br> <input id="va_number" type="text" value="###VANUMBER###" readonly="" style="font-size: 15px;font-weight: 500;"><font id="salin" style="font-size: 14px;float: right;color: #307fe2;cursor: pointer;" onclick="copy_text();"></font></span>
+                  </div>
+                  <hr>
+                  <div class="col-md-12">
+                    <span style="font-size: 12px;">Total Pembayaran <br> <font style="font-size: 15px;color: #f33030;" id="total_pembayaran">###TOTALPEMBAYARAN###</font>
+                  </span></div>
+                </section>
+                <script src="https://code.jquery.com/jquery-3.5.1.js" crossorigin="anonymous"></script>
+                <script type="text/javascript">
+                  $(document).ready(function () {
+                    $('#logo_###TYPEBAYAR###').show();
+                  });
+                </script>
+</body>
+</html>
